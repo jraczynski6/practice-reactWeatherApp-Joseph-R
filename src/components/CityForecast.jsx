@@ -10,14 +10,17 @@ export default function CityForecast({selectedCity}) {
             setForecast(null);
             return;
         };
-        
+        setForecast(
+            weatherData[selectedCity]
+        );    
     })
-    
+     if (!selectedCity || !forecast) return null;
+
     return (
         <div>
             <h2>Weather in {selectedCity}</h2>
             <p>Weather: {forecast.summary}</p>
-            <p>Details: {forecast.deatils}</p>
+            <p>Details: {forecast.details}</p>
         </div>
     )
 }

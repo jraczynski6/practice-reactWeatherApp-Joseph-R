@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function CityList({onSelectCity}) {
-    const cities = ["New York", "London", "Tokyo"];
+    const cities = ["NewYork", "London", "Tokyo"];
     return (
         <div>
             <h1>Choose city</h1>
@@ -13,5 +13,5 @@ export default function CityList({onSelectCity}) {
                 ))}
             </ul>
         </div>
-    )
+    );
 }
