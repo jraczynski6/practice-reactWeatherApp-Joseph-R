@@ -5,12 +5,13 @@ import CityForecast from './components/CityForecast'
 
 function App() {
 
-
+const [selectedCity, setSelectedCity] = useState(null);
+// TODO Manage state for selectedCity
   return (
     <>
       <div>
-        <CityList />
-        <CityForecast />
+        <CityList onSelectedCity={setSelectedCity} />
+        <CityForecast selectedCity={selectedCity} />
       </div>
     </>
   )

@@ -10,7 +10,9 @@ export default function CityForecast({selectedCity}) {
             setForecast(null);
             return;
         };
+        
     })
+    
     return (
         <div>
             <h2>Weather in {selectedCity}</h2>
