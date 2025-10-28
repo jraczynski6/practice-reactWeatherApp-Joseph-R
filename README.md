@@ -64,3 +64,16 @@ return to the city list view.
 ● Style the Application: Use CSS to improve the layout and appearance of the city list and forecast
 pages.
 
+Important Notes: 
+State updates:
+    - must happen in the right place
+    - state updates that depend on props must go in useEffect 
+
+Check for Null/undefined:
+    - do not try to read properties that are null (runtime error)
+    - use conditional rendering
+Prop Names:
+    - parents and children must use the same prop name
+
+Use Consolelogs when nothing is rendering. They will still appear in console.
+Comment out lines to check for changes. 
